@@ -1,0 +1,3 @@
+enum StationListViewRoute {
+    case noDestination
+}

@@ -1,0 +1,16 @@
+{
+    "stations": [
+        {
+            "code": "OPO",
+            "name": "Porto"
+        },
+        {
+            "code": "BCN",
+            "name": "Barcelona"
+        },
+        {
+            "code": "MAD",
+            "name": "Madrid"
+        }
+    ]
+}

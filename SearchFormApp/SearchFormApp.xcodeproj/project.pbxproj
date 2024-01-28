@@ -1,0 +1,1080 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75096A6D29F8701D00393B2B /* NetworkConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75096A6C29F8701D00393B2B /* NetworkConfigurations.swift */; };
+		755E619D29F7263D0031415B /* StationListViewRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E619C29F7263D0031415B /* StationListViewRoute.swift */; };
+		755E619F29F726620031415B /* StationListViewRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E619E29F726620031415B /* StationListViewRouting.swift */; };
+		755E61A229F728CF0031415B /* TripSearchResultsViewRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61A129F728CF0031415B /* TripSearchResultsViewRoute.swift */; };
+		755E61A429F728F70031415B /* TripSearchResultsViewRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61A329F728F70031415B /* TripSearchResultsViewRouting.swift */; };
+		755E61A629F72E4A0031415B /* SearchFormViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61A529F72E4A0031415B /* SearchFormViewModelTests.swift */; };
+		755E61AB29F72FA20031415B /* StationViewModelMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61AA29F72FA20031415B /* StationViewModelMocks.swift */; };
+		755E61AD29F732E00031415B /* ConversionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61AC29F732E00031415B /* ConversionError.swift */; };
+		755E61B329F73A8F0031415B /* OriginStationPickerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61B229F73A8F0031415B /* OriginStationPickerViewModelTests.swift */; };
+		755E61B529F73C420031415B /* DestinationStationPickerViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61B429F73C420031415B /* DestinationStationPickerViewModelTests.swift */; };
+		755E61B729F73CA70031415B /* AdultNumberViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61B629F73CA70031415B /* AdultNumberViewModelTests.swift */; };
+		755E61B929F73E100031415B /* TeenNumberViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61B829F73E100031415B /* TeenNumberViewModelTests.swift */; };
+		755E61BB29F73E2D0031415B /* ChildNumberViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61BA29F73E2D0031415B /* ChildNumberViewModelTests.swift */; };
+		755E61BD29F73F5E0031415B /* StationListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61BC29F73F5E0031415B /* StationListViewModelTests.swift */; };
+		755E61BF29F73FA50031415B /* StationListViewModelMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61BE29F73FA50031415B /* StationListViewModelMocks.swift */; };
+		755E61C129F749510031415B /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61C029F749510031415B /* URLProtocolStub.swift */; };
+		755E61C329F74A6D0031415B /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61C229F74A6D0031415B /* MockError.swift */; };
+		755E61C529F74AD30031415B /* StationModelMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E61C429F74AD30031415B /* StationModelMocks.swift */; };
+		758147A729F2A36000C66073 /* TripSearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758147A629F2A36000C66073 /* TripSearchResultsView.swift */; };
+		758147A929F2A73E00C66073 /* TripSearchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758147A829F2A73E00C66073 /* TripSearchModel.swift */; };
+		758147AB29F2A8A300C66073 /* GetTripsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758147AA29F2A8A300C66073 /* GetTripsRequest.swift */; };
+		758147AD29F2AA2D00C66073 /* TripSearchResultsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758147AC29F2AA2D00C66073 /* TripSearchResultsViewModel.swift */; };
+		758147AF29F2AAD900C66073 /* TripResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758147AE29F2AAD900C66073 /* TripResponseModel.swift */; };
+		758147B129F2AEBC00C66073 /* TripResponseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758147B029F2AEBC00C66073 /* TripResponseViewModel.swift */; };
+		758147B629F2CA2600C66073 /* TripResponseModel+Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758147B529F2CA2600C66073 /* TripResponseModel+Adapter.swift */; };
+		75830A2729F5415300DF21F3 /* StationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75830A2629F5415300DF21F3 /* StationType.swift */; };
+		75830A2C29F541B700DF21F3 /* StationPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75830A2B29F541B700DF21F3 /* StationPickerView.swift */; };
+		75830A2E29F5427F00DF21F3 /* StationPickerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75830A2D29F5427F00DF21F3 /* StationPickerViewModelProtocol.swift */; };
+		75830A3029F5690B00DF21F3 /* TripFareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75830A2F29F5690B00DF21F3 /* TripFareViewModel.swift */; };
+		75830A3E29F573E000DF21F3 /* SearchFormViewRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75830A3D29F573E000DF21F3 /* SearchFormViewRoute.swift */; };
+		75BB28A029F3449E008C59B5 /* PassengerNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB289F29F3449E008C59B5 /* PassengerNumberView.swift */; };
+		75BB28A229F34621008C59B5 /* PassengerNumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BB28A129F34621008C59B5 /* PassengerNumberViewModel.swift */; };
+		75BBB10D29F2E8EC007842DA /* SearchFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BBB10C29F2E8EC007842DA /* SearchFormViewModel.swift */; };
+		75C6F1F029F7D941005C3933 /* TripSearchResultsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6F1EF29F7D941005C3933 /* TripSearchResultsViewModelTests.swift */; };
+		75C6F1F229F7D9A1005C3933 /* TripSearchResultsViewModelMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6F1F129F7D9A1005C3933 /* TripSearchResultsViewModelMocks.swift */; };
+		75C6F1F429F7DA2A005C3933 /* TripSearchModelMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6F1F329F7DA2A005C3933 /* TripSearchModelMocks.swift */; };
+		75C6F1F629F7DB1E005C3933 /* TripFareViewModelMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6F1F529F7DB1E005C3933 /* TripFareViewModelMocks.swift */; };
+		75C6F1F829F7E15B005C3933 /* TripResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C6F1F729F7E15B005C3933 /* TripResponseModel.swift */; };
+		75C80A2C29F4306B00F468DD /* SearchFormViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C80A2B29F4306B00F468DD /* SearchFormViewModelProtocol.swift */; };
+		75C80A2E29F430E100F468DD /* SearchFormPreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C80A2D29F430E100F468DD /* SearchFormPreviewViewModel.swift */; };
+		75C80A3129F436BD00F468DD /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C80A3029F436BD00F468DD /* Routing.swift */; };
+		75C80A3329F438B800F468DD /* SearchFormViewRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C80A3229F438B800F468DD /* SearchFormViewRouting.swift */; };
+		75C80A3629F44F2F00F468DD /* PassengerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C80A3529F44F2F00F468DD /* PassengerType.swift */; };
+		75C80A3829F4584D00F468DD /* TripSearchResultsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C80A3729F4584D00F468DD /* TripSearchResultsViewModelProtocol.swift */; };
+		75CBA60D29F83A1B00C2F8C8 /* SimulatedURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBA60C29F83A1B00C2F8C8 /* SimulatedURLProtocol.swift */; };
+		75CBA60F29F83A9E00C2F8C8 /* URLSession+Simulated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBA60E29F83A9E00C2F8C8 /* URLSession+Simulated.swift */; };
+		75CBA61129F83C0B00C2F8C8 /* SimulatedStationList.json in Resources */ = {isa = PBXBuildFile; fileRef = 75CBA61029F83C0B00C2F8C8 /* SimulatedStationList.json */; };
+		75CBA61329F83C5C00C2F8C8 /* SimulatedTripSearchResults.json in Resources */ = {isa = PBXBuildFile; fileRef = 75CBA61229F83C5C00C2F8C8 /* SimulatedTripSearchResults.json */; };
+		75D28DB529F5ACD00022C725 /* PublishableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D28DB429F5ACD00022C725 /* PublishableObject.swift */; };
+		75D28DB729F5B6BE0022C725 /* LoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D28DB629F5B6BE0022C725 /* LoadingState.swift */; };
+		75D28DB929F5B6D90022C725 /* LoadableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D28DB829F5B6D90022C725 /* LoadableObject.swift */; };
+		75D28DBB29F5B7000022C725 /* LoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D28DBA29F5B7000022C725 /* LoadableView.swift */; };
+		75D28DBF29F5B7BA0022C725 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D28DBE29F5B7BA0022C725 /* ErrorView.swift */; };
+		75D28DC429F5CE9F0022C725 /* ErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D28DC329F5CE9F0022C725 /* ErrorViewModel.swift */; };
+		75D28DCB29F5DA430022C725 /* StationPickerPreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D28DCA29F5DA430022C725 /* StationPickerPreviewViewModel.swift */; };
+		75D28DCD29F5DA5B0022C725 /* StationPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D28DCC29F5DA5B0022C725 /* StationPickerViewModel.swift */; };
+		75D28DCF29F5DA830022C725 /* PassengerNumberViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D28DCE29F5DA830022C725 /* PassengerNumberViewModelProtocol.swift */; };
+		75D28DD129F5DA9E0022C725 /* PassengerNumberPreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D28DD029F5DA9E0022C725 /* PassengerNumberPreviewViewModel.swift */; };
+		75D28DD329F5DAB60022C725 /* StationListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D28DD229F5DAB60022C725 /* StationListViewModelProtocol.swift */; };
+		75D28DD529F5DAE90022C725 /* StationListPreviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D28DD429F5DAE90022C725 /* StationListPreviewViewModel.swift */; };
+		75E2871B29F08EE6007911B3 /* SearchFormAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2871A29F08EE6007911B3 /* SearchFormAppApp.swift */; };
+		75E2871D29F08EE6007911B3 /* SearchFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2871C29F08EE6007911B3 /* SearchFormView.swift */; };
+		75E2871F29F08EE8007911B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E2871E29F08EE8007911B3 /* Assets.xcassets */; };
+		75E2872229F08EE8007911B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75E2872129F08EE8007911B3 /* Preview Assets.xcassets */; };
+		75E2873629F08EE8007911B3 /* SearchFormAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2873529F08EE8007911B3 /* SearchFormAppUITests.swift */; };
+		75E2874729F09145007911B3 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2874629F09145007911B3 /* RequestProtocol.swift */; };
+		75E2874A29F09450007911B3 /* StationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2874929F09450007911B3 /* StationModel.swift */; };
+		75E2874C29F094A7007911B3 /* GetStationsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2874B29F094A7007911B3 /* GetStationsRequest.swift */; };
+		75E2874E29F0955F007911B3 /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2874D29F0955F007911B3 /* NetworkDispatcher.swift */; };
+		75E2875029F09862007911B3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2874F29F09862007911B3 /* APIClient.swift */; };
+		75E2875529F0A08F007911B3 /* StationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2875429F0A08F007911B3 /* StationListView.swift */; };
+		75E2875929F0A52C007911B3 /* StationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2875829F0A52C007911B3 /* StationListViewModel.swift */; };
+		75E2875B29F0A959007911B3 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2875A29F0A959007911B3 /* StationViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75E2872829F08EE8007911B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75E2870F29F08EE6007911B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75E2871629F08EE6007911B3;
+			remoteInfo = SearchFormApp;
+		};
+		75E2873229F08EE8007911B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75E2870F29F08EE6007911B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75E2871629F08EE6007911B3;
+			remoteInfo = SearchFormApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75096A6C29F8701D00393B2B /* NetworkConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurations.swift; sourceTree = "<group>"; };
+		755E619C29F7263D0031415B /* StationListViewRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewRoute.swift; sourceTree = "<group>"; };
+		755E619E29F726620031415B /* StationListViewRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewRouting.swift; sourceTree = "<group>"; };
+		755E61A129F728CF0031415B /* TripSearchResultsViewRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSearchResultsViewRoute.swift; sourceTree = "<group>"; };
+		755E61A329F728F70031415B /* TripSearchResultsViewRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSearchResultsViewRouting.swift; sourceTree = "<group>"; };
+		755E61A529F72E4A0031415B /* SearchFormViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormViewModelTests.swift; sourceTree = "<group>"; };
+		755E61AA29F72FA20031415B /* StationViewModelMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModelMocks.swift; sourceTree = "<group>"; };
+		755E61AC29F732E00031415B /* ConversionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionError.swift; sourceTree = "<group>"; };
+		755E61B229F73A8F0031415B /* OriginStationPickerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OriginStationPickerViewModelTests.swift; sourceTree = "<group>"; };
+		755E61B429F73C420031415B /* DestinationStationPickerViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationStationPickerViewModelTests.swift; sourceTree = "<group>"; };
+		755E61B629F73CA70031415B /* AdultNumberViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdultNumberViewModelTests.swift; sourceTree = "<group>"; };
+		755E61B829F73E100031415B /* TeenNumberViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeenNumberViewModelTests.swift; sourceTree = "<group>"; };
+		755E61BA29F73E2D0031415B /* ChildNumberViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildNumberViewModelTests.swift; sourceTree = "<group>"; };
+		755E61BC29F73F5E0031415B /* StationListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewModelTests.swift; sourceTree = "<group>"; };
+		755E61BE29F73FA50031415B /* StationListViewModelMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewModelMocks.swift; sourceTree = "<group>"; };
+		755E61C029F749510031415B /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
+		755E61C229F74A6D0031415B /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		755E61C429F74AD30031415B /* StationModelMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModelMocks.swift; sourceTree = "<group>"; };
+		758147A629F2A36000C66073 /* TripSearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSearchResultsView.swift; sourceTree = "<group>"; };
+		758147A829F2A73E00C66073 /* TripSearchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSearchModel.swift; sourceTree = "<group>"; };
+		758147AA29F2A8A300C66073 /* GetTripsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTripsRequest.swift; sourceTree = "<group>"; };
+		758147AC29F2AA2D00C66073 /* TripSearchResultsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSearchResultsViewModel.swift; sourceTree = "<group>"; };
+		758147AE29F2AAD900C66073 /* TripResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripResponseModel.swift; sourceTree = "<group>"; };
+		758147B029F2AEBC00C66073 /* TripResponseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripResponseViewModel.swift; sourceTree = "<group>"; };
+		758147B529F2CA2600C66073 /* TripResponseModel+Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TripResponseModel+Adapter.swift"; sourceTree = "<group>"; };
+		75830A2629F5415300DF21F3 /* StationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationType.swift; sourceTree = "<group>"; };
+		75830A2B29F541B700DF21F3 /* StationPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPickerView.swift; sourceTree = "<group>"; };
+		75830A2D29F5427F00DF21F3 /* StationPickerViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPickerViewModelProtocol.swift; sourceTree = "<group>"; };
+		75830A2F29F5690B00DF21F3 /* TripFareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFareViewModel.swift; sourceTree = "<group>"; };
+		75830A3D29F573E000DF21F3 /* SearchFormViewRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormViewRoute.swift; sourceTree = "<group>"; };
+		75BB289F29F3449E008C59B5 /* PassengerNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerNumberView.swift; sourceTree = "<group>"; };
+		75BB28A129F34621008C59B5 /* PassengerNumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerNumberViewModel.swift; sourceTree = "<group>"; };
+		75BBB10C29F2E8EC007842DA /* SearchFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormViewModel.swift; sourceTree = "<group>"; };
+		75C6F1EF29F7D941005C3933 /* TripSearchResultsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSearchResultsViewModelTests.swift; sourceTree = "<group>"; };
+		75C6F1F129F7D9A1005C3933 /* TripSearchResultsViewModelMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSearchResultsViewModelMocks.swift; sourceTree = "<group>"; };
+		75C6F1F329F7DA2A005C3933 /* TripSearchModelMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSearchModelMocks.swift; sourceTree = "<group>"; };
+		75C6F1F529F7DB1E005C3933 /* TripFareViewModelMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFareViewModelMocks.swift; sourceTree = "<group>"; };
+		75C6F1F729F7E15B005C3933 /* TripResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripResponseModel.swift; sourceTree = "<group>"; };
+		75C80A2B29F4306B00F468DD /* SearchFormViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormViewModelProtocol.swift; sourceTree = "<group>"; };
+		75C80A2D29F430E100F468DD /* SearchFormPreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormPreviewViewModel.swift; sourceTree = "<group>"; };
+		75C80A3029F436BD00F468DD /* Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		75C80A3229F438B800F468DD /* SearchFormViewRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormViewRouting.swift; sourceTree = "<group>"; };
+		75C80A3529F44F2F00F468DD /* PassengerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerType.swift; sourceTree = "<group>"; };
+		75C80A3729F4584D00F468DD /* TripSearchResultsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSearchResultsViewModelProtocol.swift; sourceTree = "<group>"; };
+		75CBA60C29F83A1B00C2F8C8 /* SimulatedURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatedURLProtocol.swift; sourceTree = "<group>"; };
+		75CBA60E29F83A9E00C2F8C8 /* URLSession+Simulated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Simulated.swift"; sourceTree = "<group>"; };
+		75CBA61029F83C0B00C2F8C8 /* SimulatedStationList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SimulatedStationList.json; sourceTree = "<group>"; };
+		75CBA61229F83C5C00C2F8C8 /* SimulatedTripSearchResults.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SimulatedTripSearchResults.json; sourceTree = "<group>"; };
+		75D28DB429F5ACD00022C725 /* PublishableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishableObject.swift; sourceTree = "<group>"; };
+		75D28DB629F5B6BE0022C725 /* LoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingState.swift; sourceTree = "<group>"; };
+		75D28DB829F5B6D90022C725 /* LoadableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableObject.swift; sourceTree = "<group>"; };
+		75D28DBA29F5B7000022C725 /* LoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableView.swift; sourceTree = "<group>"; };
+		75D28DBE29F5B7BA0022C725 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		75D28DC329F5CE9F0022C725 /* ErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewModel.swift; sourceTree = "<group>"; };
+		75D28DCA29F5DA430022C725 /* StationPickerPreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPickerPreviewViewModel.swift; sourceTree = "<group>"; };
+		75D28DCC29F5DA5B0022C725 /* StationPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationPickerViewModel.swift; sourceTree = "<group>"; };
+		75D28DCE29F5DA830022C725 /* PassengerNumberViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerNumberViewModelProtocol.swift; sourceTree = "<group>"; };
+		75D28DD029F5DA9E0022C725 /* PassengerNumberPreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerNumberPreviewViewModel.swift; sourceTree = "<group>"; };
+		75D28DD229F5DAB60022C725 /* StationListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewModelProtocol.swift; sourceTree = "<group>"; };
+		75D28DD429F5DAE90022C725 /* StationListPreviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListPreviewViewModel.swift; sourceTree = "<group>"; };
+		75E2871729F08EE6007911B3 /* SearchFormApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchFormApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E2871A29F08EE6007911B3 /* SearchFormAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormAppApp.swift; sourceTree = "<group>"; };
+		75E2871C29F08EE6007911B3 /* SearchFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormView.swift; sourceTree = "<group>"; };
+		75E2871E29F08EE8007911B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75E2872129F08EE8007911B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		75E2872729F08EE8007911B3 /* SearchFormAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchFormAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E2873129F08EE8007911B3 /* SearchFormAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchFormAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75E2873529F08EE8007911B3 /* SearchFormAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormAppUITests.swift; sourceTree = "<group>"; };
+		75E2874629F09145007911B3 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		75E2874929F09450007911B3 /* StationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationModel.swift; sourceTree = "<group>"; };
+		75E2874B29F094A7007911B3 /* GetStationsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStationsRequest.swift; sourceTree = "<group>"; };
+		75E2874D29F0955F007911B3 /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		75E2874F29F09862007911B3 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		75E2875429F0A08F007911B3 /* StationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListView.swift; sourceTree = "<group>"; };
+		75E2875829F0A52C007911B3 /* StationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewModel.swift; sourceTree = "<group>"; };
+		75E2875A29F0A959007911B3 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75E2871429F08EE6007911B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E2872429F08EE8007911B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E2872E29F08EE8007911B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		755E619B29F725EE0031415B /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				755E619C29F7263D0031415B /* StationListViewRoute.swift */,
+				755E619E29F726620031415B /* StationListViewRouting.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		755E61A029F728BA0031415B /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				755E61A129F728CF0031415B /* TripSearchResultsViewRoute.swift */,
+				755E61A329F728F70031415B /* TripSearchResultsViewRouting.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		755E61A729F72F080031415B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				755E61C429F74AD30031415B /* StationModelMocks.swift */,
+				75C6F1F329F7DA2A005C3933 /* TripSearchModelMocks.swift */,
+				75C6F1F729F7E15B005C3933 /* TripResponseModel.swift */,
+				755E61AA29F72FA20031415B /* StationViewModelMocks.swift */,
+				755E61BE29F73FA50031415B /* StationListViewModelMocks.swift */,
+				75C6F1F129F7D9A1005C3933 /* TripSearchResultsViewModelMocks.swift */,
+				75C6F1F529F7DB1E005C3933 /* TripFareViewModelMocks.swift */,
+				755E61C029F749510031415B /* URLProtocolStub.swift */,
+				755E61C229F74A6D0031415B /* MockError.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		758147A529F2A34A00C66073 /* TripResults */ = {
+			isa = PBXGroup;
+			children = (
+				755E61A029F728BA0031415B /* Routing */,
+				75830A3129F5694E00DF21F3 /* Model */,
+				75D28DDA29F5DB3E0022C725 /* ViewModel */,
+				758147A629F2A36000C66073 /* TripSearchResultsView.swift */,
+			);
+			path = TripResults;
+			sourceTree = "<group>";
+		};
+		758147B429F2CA0F00C66073 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				758147B529F2CA2600C66073 /* TripResponseModel+Adapter.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		75830A2829F5417E00DF21F3 /* StationPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				75D28DD729F5DB1B0022C725 /* ViewModel */,
+				75830A2B29F541B700DF21F3 /* StationPickerView.swift */,
+			);
+			path = StationPickerView;
+			sourceTree = "<group>";
+		};
+		75830A3129F5694E00DF21F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				758147B029F2AEBC00C66073 /* TripResponseViewModel.swift */,
+				75830A2F29F5690B00DF21F3 /* TripFareViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75830A3429F56DA000DF21F3 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				75E2874B29F094A7007911B3 /* GetStationsRequest.swift */,
+				758147AA29F2A8A300C66073 /* GetTripsRequest.swift */,
+				75096A6C29F8701D00393B2B /* NetworkConfigurations.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		75830A3729F571A000DF21F3 /* Enumerators */ = {
+			isa = PBXGroup;
+			children = (
+				75D28DB629F5B6BE0022C725 /* LoadingState.swift */,
+				75C80A3529F44F2F00F468DD /* PassengerType.swift */,
+				75830A2629F5415300DF21F3 /* StationType.swift */,
+				755E61AC29F732E00031415B /* ConversionError.swift */,
+			);
+			path = Enumerators;
+			sourceTree = "<group>";
+		};
+		75830A3829F571C200DF21F3 /* ViewsAndViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				75E5576429F1E098001DCFE6 /* SearchForm */,
+				758147A529F2A34A00C66073 /* TripResults */,
+				75D28DC229F5CE8B0022C725 /* Error */,
+				75D28DBA29F5B7000022C725 /* LoadableView.swift */,
+			);
+			path = ViewsAndViewModels;
+			sourceTree = "<group>";
+		};
+		75830A3F29F573EF00DF21F3 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				75830A3D29F573E000DF21F3 /* SearchFormViewRoute.swift */,
+				75C80A3229F438B800F468DD /* SearchFormViewRouting.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		75BB289E29F34485008C59B5 /* PassengerNumberView */ = {
+			isa = PBXGroup;
+			children = (
+				75D28DD829F5DB240022C725 /* ViewModel */,
+				75BB289F29F3449E008C59B5 /* PassengerNumberView.swift */,
+			);
+			path = PassengerNumberView;
+			sourceTree = "<group>";
+		};
+		75C80A2A29F4305700F468DD /* SearchFormView */ = {
+			isa = PBXGroup;
+			children = (
+				75D28DD629F5DB120022C725 /* ViewModel */,
+				75830A3F29F573EF00DF21F3 /* Routing */,
+				75E2871C29F08EE6007911B3 /* SearchFormView.swift */,
+			);
+			path = SearchFormView;
+			sourceTree = "<group>";
+		};
+		75CBA60B29F839F200C2F8C8 /* UITestingRelated */ = {
+			isa = PBXGroup;
+			children = (
+				75CBA60C29F83A1B00C2F8C8 /* SimulatedURLProtocol.swift */,
+				75CBA60E29F83A9E00C2F8C8 /* URLSession+Simulated.swift */,
+				75CBA61029F83C0B00C2F8C8 /* SimulatedStationList.json */,
+				75CBA61229F83C5C00C2F8C8 /* SimulatedTripSearchResults.json */,
+			);
+			path = UITestingRelated;
+			sourceTree = "<group>";
+		};
+		75D28DC229F5CE8B0022C725 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				75D28DBE29F5B7BA0022C725 /* ErrorView.swift */,
+				75D28DC329F5CE9F0022C725 /* ErrorViewModel.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		75D28DD629F5DB120022C725 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				75C80A2B29F4306B00F468DD /* SearchFormViewModelProtocol.swift */,
+				75BBB10C29F2E8EC007842DA /* SearchFormViewModel.swift */,
+				75C80A2D29F430E100F468DD /* SearchFormPreviewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		75D28DD729F5DB1B0022C725 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				75830A2D29F5427F00DF21F3 /* StationPickerViewModelProtocol.swift */,
+				75D28DCC29F5DA5B0022C725 /* StationPickerViewModel.swift */,
+				75D28DCA29F5DA430022C725 /* StationPickerPreviewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		75D28DD829F5DB240022C725 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				75D28DCE29F5DA830022C725 /* PassengerNumberViewModelProtocol.swift */,
+				75BB28A129F34621008C59B5 /* PassengerNumberViewModel.swift */,
+				75D28DD029F5DA9E0022C725 /* PassengerNumberPreviewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		75D28DD929F5DB2D0022C725 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				75D28DD229F5DAB60022C725 /* StationListViewModelProtocol.swift */,
+				75E2875829F0A52C007911B3 /* StationListViewModel.swift */,
+				75D28DD429F5DAE90022C725 /* StationListPreviewViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		75D28DDA29F5DB3E0022C725 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				75C80A3729F4584D00F468DD /* TripSearchResultsViewModelProtocol.swift */,
+				758147AC29F2AA2D00C66073 /* TripSearchResultsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		75D28DDB29F5DB6C0022C725 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75E2875A29F0A959007911B3 /* StationViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75D28DDC29F5DBBF0022C725 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				75D28DB829F5B6D90022C725 /* LoadableObject.swift */,
+				75D28DB429F5ACD00022C725 /* PublishableObject.swift */,
+				75C80A3029F436BD00F468DD /* Routing.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		75E2870E29F08EE6007911B3 = {
+			isa = PBXGroup;
+			children = (
+				75E2871929F08EE6007911B3 /* SearchFormApp */,
+				75E2872A29F08EE8007911B3 /* SearchFormAppTests */,
+				75E2873429F08EE8007911B3 /* SearchFormAppUITests */,
+				75E2871829F08EE6007911B3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75E2871829F08EE6007911B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75E2871729F08EE6007911B3 /* SearchFormApp.app */,
+				75E2872729F08EE8007911B3 /* SearchFormAppTests.xctest */,
+				75E2873129F08EE8007911B3 /* SearchFormAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75E2871929F08EE6007911B3 /* SearchFormApp */ = {
+			isa = PBXGroup;
+			children = (
+				75830A3829F571C200DF21F3 /* ViewsAndViewModels */,
+				75830A3729F571A000DF21F3 /* Enumerators */,
+				75E2874829F09442007911B3 /* Models */,
+				75E2874529F090FC007911B3 /* DataSource */,
+				75D28DDC29F5DBBF0022C725 /* Utils */,
+				75E2871A29F08EE6007911B3 /* SearchFormAppApp.swift */,
+				75E2871E29F08EE8007911B3 /* Assets.xcassets */,
+				75E2872029F08EE8007911B3 /* Preview Content */,
+			);
+			path = SearchFormApp;
+			sourceTree = "<group>";
+		};
+		75E2872029F08EE8007911B3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				75E2872129F08EE8007911B3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		75E2872A29F08EE8007911B3 /* SearchFormAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				755E61A729F72F080031415B /* Mocks */,
+				755E61A529F72E4A0031415B /* SearchFormViewModelTests.swift */,
+				755E61B229F73A8F0031415B /* OriginStationPickerViewModelTests.swift */,
+				755E61B429F73C420031415B /* DestinationStationPickerViewModelTests.swift */,
+				755E61B629F73CA70031415B /* AdultNumberViewModelTests.swift */,
+				755E61B829F73E100031415B /* TeenNumberViewModelTests.swift */,
+				755E61BA29F73E2D0031415B /* ChildNumberViewModelTests.swift */,
+				755E61BC29F73F5E0031415B /* StationListViewModelTests.swift */,
+				75C6F1EF29F7D941005C3933 /* TripSearchResultsViewModelTests.swift */,
+			);
+			path = SearchFormAppTests;
+			sourceTree = "<group>";
+		};
+		75E2873429F08EE8007911B3 /* SearchFormAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75E2873529F08EE8007911B3 /* SearchFormAppUITests.swift */,
+			);
+			path = SearchFormAppUITests;
+			sourceTree = "<group>";
+		};
+		75E2874529F090FC007911B3 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				75CBA60B29F839F200C2F8C8 /* UITestingRelated */,
+				75830A3429F56DA000DF21F3 /* Requests */,
+				75E2874F29F09862007911B3 /* APIClient.swift */,
+				75E2874D29F0955F007911B3 /* NetworkDispatcher.swift */,
+				75E2874629F09145007911B3 /* RequestProtocol.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		75E2874829F09442007911B3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				75E2874929F09450007911B3 /* StationModel.swift */,
+				758147A829F2A73E00C66073 /* TripSearchModel.swift */,
+				758147AE29F2AAD900C66073 /* TripResponseModel.swift */,
+				758147B429F2CA0F00C66073 /* Extensions */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		75E2875129F0A056007911B3 /* StationListView */ = {
+			isa = PBXGroup;
+			children = (
+				755E619B29F725EE0031415B /* Routing */,
+				75D28DD929F5DB2D0022C725 /* ViewModel */,
+				75E2875429F0A08F007911B3 /* StationListView.swift */,
+			);
+			path = StationListView;
+			sourceTree = "<group>";
+		};
+		75E5576429F1E098001DCFE6 /* SearchForm */ = {
+			isa = PBXGroup;
+			children = (
+				75D28DDB29F5DB6C0022C725 /* Model */,
+				75C80A2A29F4305700F468DD /* SearchFormView */,
+				75830A2829F5417E00DF21F3 /* StationPickerView */,
+				75BB289E29F34485008C59B5 /* PassengerNumberView */,
+				75E2875129F0A056007911B3 /* StationListView */,
+			);
+			path = SearchForm;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75E2871629F08EE6007911B3 /* SearchFormApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75E2873B29F08EE8007911B3 /* Build configuration list for PBXNativeTarget "SearchFormApp" */;
+			buildPhases = (
+				75E2871329F08EE6007911B3 /* Sources */,
+				75E2871429F08EE6007911B3 /* Frameworks */,
+				75E2871529F08EE6007911B3 /* Resources */,
+				75E2874429F08F42007911B3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SearchFormApp;
+			productName = SearchFormApp;
+			productReference = 75E2871729F08EE6007911B3 /* SearchFormApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75E2872629F08EE8007911B3 /* SearchFormAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75E2873E29F08EE8007911B3 /* Build configuration list for PBXNativeTarget "SearchFormAppTests" */;
+			buildPhases = (
+				75E2872329F08EE8007911B3 /* Sources */,
+				75E2872429F08EE8007911B3 /* Frameworks */,
+				75E2872529F08EE8007911B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75E2872929F08EE8007911B3 /* PBXTargetDependency */,
+			);
+			name = SearchFormAppTests;
+			productName = SearchFormAppTests;
+			productReference = 75E2872729F08EE8007911B3 /* SearchFormAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		75E2873029F08EE8007911B3 /* SearchFormAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75E2874129F08EE8007911B3 /* Build configuration list for PBXNativeTarget "SearchFormAppUITests" */;
+			buildPhases = (
+				75E2872D29F08EE8007911B3 /* Sources */,
+				75E2872E29F08EE8007911B3 /* Frameworks */,
+				75E2872F29F08EE8007911B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75E2873329F08EE8007911B3 /* PBXTargetDependency */,
+			);
+			name = SearchFormAppUITests;
+			productName = SearchFormAppUITests;
+			productReference = 75E2873129F08EE8007911B3 /* SearchFormAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75E2870F29F08EE6007911B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					75E2871629F08EE6007911B3 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					75E2872629F08EE8007911B3 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 75E2871629F08EE6007911B3;
+					};
+					75E2873029F08EE8007911B3 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 75E2871629F08EE6007911B3;
+					};
+				};
+			};
+			buildConfigurationList = 75E2871229F08EE6007911B3 /* Build configuration list for PBXProject "SearchFormApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75E2870E29F08EE6007911B3;
+			productRefGroup = 75E2871829F08EE6007911B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75E2871629F08EE6007911B3 /* SearchFormApp */,
+				75E2872629F08EE8007911B3 /* SearchFormAppTests */,
+				75E2873029F08EE8007911B3 /* SearchFormAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75E2871529F08EE6007911B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75CBA61129F83C0B00C2F8C8 /* SimulatedStationList.json in Resources */,
+				75E2872229F08EE8007911B3 /* Preview Assets.xcassets in Resources */,
+				75CBA61329F83C5C00C2F8C8 /* SimulatedTripSearchResults.json in Resources */,
+				75E2871F29F08EE8007911B3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E2872529F08EE8007911B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E2872F29F08EE8007911B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75E2874429F08F42007911B3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75E2871329F08EE6007911B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				755E61AD29F732E00031415B /* ConversionError.swift in Sources */,
+				75E2874A29F09450007911B3 /* StationModel.swift in Sources */,
+				758147AB29F2A8A300C66073 /* GetTripsRequest.swift in Sources */,
+				75D28DBF29F5B7BA0022C725 /* ErrorView.swift in Sources */,
+				75E2875529F0A08F007911B3 /* StationListView.swift in Sources */,
+				75BB28A229F34621008C59B5 /* PassengerNumberViewModel.swift in Sources */,
+				755E61A229F728CF0031415B /* TripSearchResultsViewRoute.swift in Sources */,
+				75D28DCB29F5DA430022C725 /* StationPickerPreviewViewModel.swift in Sources */,
+				75C80A3829F4584D00F468DD /* TripSearchResultsViewModelProtocol.swift in Sources */,
+				75C80A3629F44F2F00F468DD /* PassengerType.swift in Sources */,
+				75D28DB529F5ACD00022C725 /* PublishableObject.swift in Sources */,
+				75CBA60F29F83A9E00C2F8C8 /* URLSession+Simulated.swift in Sources */,
+				758147B629F2CA2600C66073 /* TripResponseModel+Adapter.swift in Sources */,
+				75E2875029F09862007911B3 /* APIClient.swift in Sources */,
+				75C80A2C29F4306B00F468DD /* SearchFormViewModelProtocol.swift in Sources */,
+				75D28DC429F5CE9F0022C725 /* ErrorViewModel.swift in Sources */,
+				75E2874C29F094A7007911B3 /* GetStationsRequest.swift in Sources */,
+				75C80A2E29F430E100F468DD /* SearchFormPreviewViewModel.swift in Sources */,
+				755E61A429F728F70031415B /* TripSearchResultsViewRouting.swift in Sources */,
+				758147A929F2A73E00C66073 /* TripSearchModel.swift in Sources */,
+				75C80A3129F436BD00F468DD /* Routing.swift in Sources */,
+				758147A729F2A36000C66073 /* TripSearchResultsView.swift in Sources */,
+				75C80A3329F438B800F468DD /* SearchFormViewRouting.swift in Sources */,
+				75E2874729F09145007911B3 /* RequestProtocol.swift in Sources */,
+				75E2875B29F0A959007911B3 /* StationViewModel.swift in Sources */,
+				75D28DB729F5B6BE0022C725 /* LoadingState.swift in Sources */,
+				75BBB10D29F2E8EC007842DA /* SearchFormViewModel.swift in Sources */,
+				758147AD29F2AA2D00C66073 /* TripSearchResultsViewModel.swift in Sources */,
+				75BB28A029F3449E008C59B5 /* PassengerNumberView.swift in Sources */,
+				758147B129F2AEBC00C66073 /* TripResponseViewModel.swift in Sources */,
+				75830A2C29F541B700DF21F3 /* StationPickerView.swift in Sources */,
+				75D28DD129F5DA9E0022C725 /* PassengerNumberPreviewViewModel.swift in Sources */,
+				75096A6D29F8701D00393B2B /* NetworkConfigurations.swift in Sources */,
+				75D28DCD29F5DA5B0022C725 /* StationPickerViewModel.swift in Sources */,
+				75D28DD329F5DAB60022C725 /* StationListViewModelProtocol.swift in Sources */,
+				75D28DBB29F5B7000022C725 /* LoadableView.swift in Sources */,
+				75D28DB929F5B6D90022C725 /* LoadableObject.swift in Sources */,
+				75E2874E29F0955F007911B3 /* NetworkDispatcher.swift in Sources */,
+				75E2875929F0A52C007911B3 /* StationListViewModel.swift in Sources */,
+				75E2871D29F08EE6007911B3 /* SearchFormView.swift in Sources */,
+				75CBA60D29F83A1B00C2F8C8 /* SimulatedURLProtocol.swift in Sources */,
+				75830A3E29F573E000DF21F3 /* SearchFormViewRoute.swift in Sources */,
+				75830A3029F5690B00DF21F3 /* TripFareViewModel.swift in Sources */,
+				75830A2E29F5427F00DF21F3 /* StationPickerViewModelProtocol.swift in Sources */,
+				75830A2729F5415300DF21F3 /* StationType.swift in Sources */,
+				75D28DD529F5DAE90022C725 /* StationListPreviewViewModel.swift in Sources */,
+				75D28DCF29F5DA830022C725 /* PassengerNumberViewModelProtocol.swift in Sources */,
+				755E619D29F7263D0031415B /* StationListViewRoute.swift in Sources */,
+				75E2871B29F08EE6007911B3 /* SearchFormAppApp.swift in Sources */,
+				758147AF29F2AAD900C66073 /* TripResponseModel.swift in Sources */,
+				755E619F29F726620031415B /* StationListViewRouting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E2872329F08EE8007911B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				755E61C329F74A6D0031415B /* MockError.swift in Sources */,
+				755E61B529F73C420031415B /* DestinationStationPickerViewModelTests.swift in Sources */,
+				755E61B729F73CA70031415B /* AdultNumberViewModelTests.swift in Sources */,
+				755E61A629F72E4A0031415B /* SearchFormViewModelTests.swift in Sources */,
+				755E61BB29F73E2D0031415B /* ChildNumberViewModelTests.swift in Sources */,
+				755E61B329F73A8F0031415B /* OriginStationPickerViewModelTests.swift in Sources */,
+				755E61AB29F72FA20031415B /* StationViewModelMocks.swift in Sources */,
+				755E61B929F73E100031415B /* TeenNumberViewModelTests.swift in Sources */,
+				755E61BF29F73FA50031415B /* StationListViewModelMocks.swift in Sources */,
+				755E61BD29F73F5E0031415B /* StationListViewModelTests.swift in Sources */,
+				75C6F1F029F7D941005C3933 /* TripSearchResultsViewModelTests.swift in Sources */,
+				755E61C129F749510031415B /* URLProtocolStub.swift in Sources */,
+				75C6F1F429F7DA2A005C3933 /* TripSearchModelMocks.swift in Sources */,
+				75C6F1F629F7DB1E005C3933 /* TripFareViewModelMocks.swift in Sources */,
+				75C6F1F829F7E15B005C3933 /* TripResponseModel.swift in Sources */,
+				75C6F1F229F7D9A1005C3933 /* TripSearchResultsViewModelMocks.swift in Sources */,
+				755E61C529F74AD30031415B /* StationModelMocks.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75E2872D29F08EE8007911B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E2873629F08EE8007911B3 /* SearchFormAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75E2872929F08EE8007911B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75E2871629F08EE6007911B3 /* SearchFormApp */;
+			targetProxy = 75E2872829F08EE8007911B3 /* PBXContainerItemProxy */;
+		};
+		75E2873329F08EE8007911B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75E2871629F08EE6007911B3 /* SearchFormApp */;
+			targetProxy = 75E2873229F08EE8007911B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		75E2873929F08EE8007911B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75E2873A29F08EE8007911B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75E2873C29F08EE8007911B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SearchFormApp/Preview Content\"";
+				DEVELOPMENT_TEAM = Y93GF5243Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardosilva.SearchFormApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75E2873D29F08EE8007911B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SearchFormApp/Preview Content\"";
+				DEVELOPMENT_TEAM = Y93GF5243Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardosilva.SearchFormApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		75E2873F29F08EE8007911B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y93GF5243Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardosilva.SearchFormAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchFormApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SearchFormApp";
+			};
+			name = Debug;
+		};
+		75E2874029F08EE8007911B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Y93GF5243Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardosilva.SearchFormAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SearchFormApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SearchFormApp";
+			};
+			name = Release;
+		};
+		75E2874229F08EE8007911B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardosilva.SearchFormAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SearchFormApp;
+			};
+			name = Debug;
+		};
+		75E2874329F08EE8007911B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ricardosilva.SearchFormAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SearchFormApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75E2871229F08EE6007911B3 /* Build configuration list for PBXProject "SearchFormApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E2873929F08EE8007911B3 /* Debug */,
+				75E2873A29F08EE8007911B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75E2873B29F08EE8007911B3 /* Build configuration list for PBXNativeTarget "SearchFormApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E2873C29F08EE8007911B3 /* Debug */,
+				75E2873D29F08EE8007911B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75E2873E29F08EE8007911B3 /* Build configuration list for PBXNativeTarget "SearchFormAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E2873F29F08EE8007911B3 /* Debug */,
+				75E2874029F08EE8007911B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75E2874129F08EE8007911B3 /* Build configuration list for PBXNativeTarget "SearchFormAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75E2874229F08EE8007911B3 /* Debug */,
+				75E2874329F08EE8007911B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75E2870F29F08EE6007911B3 /* Project object */;
+}

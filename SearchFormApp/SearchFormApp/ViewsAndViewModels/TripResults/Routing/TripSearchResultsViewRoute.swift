@@ -1,0 +1,3 @@
+enum TripSearchResultsViewRoute {
+    case noDestination
+}
